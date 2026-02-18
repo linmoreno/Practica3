@@ -1,7 +1,22 @@
 <resources>
-    <string name="app_name">Practica4</string>
+    <string name="app_name">Los Portales</string>
 
-    <string name="welcome_text">Welcome to the Portales!</string>
-    <string name="welcome_description">Taqueria Los Portales is a quick, casual restaurant.</string>
+    <string name="welcome_text">Welcome to the portales!</string>
+    <string name="welcome_description">Taqueria los portales is a quick, casual restaurant.</string>
     <string name="button_start">get started!</string>
+
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="terms">I have read and accept the terms and conditions of the Portales</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="our_menu">Our menu</string>
+    <string name="Antojitos">Antojitos</string>
+    <string name="Especialidades">Especialidades</string>
+    <string name="Combinations">Combinations</string>
+    <string name="Tortas">Tortas</string>
+    <string name="Sopas">Sopas</string>
+    <string name="Drinks">Drinks</string>
 </resources>
