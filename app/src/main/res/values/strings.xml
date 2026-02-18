@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practica4</string>
+
+    <string name="welcome_text">Welcome to the Portales!</string>
+    <string name="welcome_description">Taqueria Los Portales is a quick, casual restaurant.</string>
+    <string name="button_start">get started!</string>
+</resources>
