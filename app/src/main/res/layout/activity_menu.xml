@@ -35,7 +35,7 @@
         android:paddingHorizontal="50dp">
         <Button
             android:text="@string/Antojitos"
-            android:textColor="@color/rojo"
+            android:textColor="@color/crema"
             android:background="@drawable/first_gradient"
             android:layout_marginBottom="@dimen/input_margin"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -48,7 +48,7 @@
 
         <Button
             android:text="@string/Especialidades"
-            android:textColor="@color/rojo"
+            android:textColor="@color/crema"
             android:background="@drawable/first_gradient"
             android:layout_marginBottom="@dimen/input_margin"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -61,7 +61,7 @@
 
         <Button
             android:text="@string/Combinations"
-            android:textColor="@color/rojo"
+            android:textColor="@color/crema"
             android:background="@drawable/first_gradient"
             android:layout_marginBottom="@dimen/input_margin"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -73,7 +73,7 @@
             android:id="@+id/button_combinations"/>
         <Button
             android:text="@string/Tortas"
-            android:textColor="@color/rojo"
+            android:textColor="@color/crema"
             android:background="@drawable/first_gradient"
             android:layout_marginBottom="@dimen/input_margin"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -85,7 +85,7 @@
             android:id="@+id/button_Tortas"/>
         <Button
             android:text="@string/Sopas"
-            android:textColor="@color/rojo"
+            android:textColor="@color/crema"
             android:background="@drawable/first_gradient"
             android:layout_marginBottom="@dimen/input_margin"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -98,7 +98,7 @@
 
         <Button
             android:text="@string/Drinks"
-            android:textColor="@color/rojo"
+            android:textColor="@color/crema"
             android:background="@drawable/first_gradient"
             android:layout_marginBottom="@dimen/input_margin"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"

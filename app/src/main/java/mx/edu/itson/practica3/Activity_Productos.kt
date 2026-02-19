@@ -10,6 +10,9 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 
 
 class ProductosActivity : AppCompatActivity() {
@@ -18,14 +21,42 @@ class ProductosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_productos)
+        enableEdgeToEdge()
         supportActionBar?.hide()
 
         var menuOption: String? = intent.getStringExtra("menuType")
         agregarProductor(menuOption)
+        var imagen: ImageView = findViewById(R.id.imageView)
+        when (menuOption){
+            "Drinks" ->{
+                imagen.setImageResource(R.drawable.drinks)
+            }
+            "Especialidades" ->{
+                imagen.setImageResource(R.drawable.especialidades)
+            }
+            "Combinations" ->{
+                imagen.setImageResource(R.drawable.combinations)
+            }
+            "Tortas" ->{
+                imagen.setImageResource(R.drawable.tortas)
+            }
+            "Sopas" ->{
+                imagen.setImageResource(R.drawable.sopas)
+            }
+            "Antojitos" ->{
+                imagen.setImageResource(R.drawable.antojitos)
+
+            }
+        }
         var listview: ListView = findViewById(R.id.litview) as ListView
         var adaptador: AdaptadorProductos = AdaptadorProductos(this, menu)
         listview.adapter = adaptador
 
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
     }
 
     fun agregarProductor(Option: String?) {
@@ -35,7 +66,7 @@ class ProductosActivity : AppCompatActivity() {
                 menu.add(Product("Sodas", R.drawable.sodas, " Sodas de todos los sabores",2.99))
                 menu.add(Product("Caguama", R.drawable.caguama, "Caguama ballena",3.99))
                 menu.add(Product("Caguama-Michelada", R.drawable.caguamamichelada, "Caguama de michelada",5.99))
-                menu.add(Product("Cervesas", R.drawable.domesticbeer, "Todo tipos de cerveza",5.75))
+                menu.add(Product("Cervezas", R.drawable.domesticbeer, "Todo tipos de cerveza",5.75))
             }
 
             "Especialidades" ->{
